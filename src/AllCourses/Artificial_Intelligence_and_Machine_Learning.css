@@ -1,0 +1,106 @@
+.courseBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between the divs */
+  }
+
+  .AIMbox1 {
+    flex: 1 1 calc(65% - 18px); /* Make each div take up 25% of the container */
+    /* background-color: #4CAF50; */
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    height: 550px;
+  }
+  .AIMbox1 img{
+    width: 800px;
+    height: 500px;
+  }
+  .AIMbox2 {
+    flex: 1 1 calc(35% - 10px); /* Make each div take up 25% of the container */
+    /* background-color: #4CAF50; */
+    box-shadow: 2px 4px 8px 3px black;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    text-align: start;
+    box-sizing: border-box;
+  }
+  .AIMbox2 center{
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(77, 75, 75);
+  }
+  .AIMbox2 i{
+   font-size: 30px;
+  }
+  .AIMbox3 {
+    flex: 1 1 calc(65% - 10px); /* Make each div take up 25% of the container */
+    /* background-color: #4CAF50; */
+    padding: 5px;
+    /* text-align: center; */
+    box-sizing: border-box;
+    margin-top: -100px;
+  }
+  .Artificial .headPy {
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgb(4, 4, 104);
+    border-radius: 10px;
+    color: white;
+    height: 45px;
+    padding: 2px 20px 3px;
+  }
+  .AIMbox3 .detailBtn{
+    background-color: rgb(225, 182, 74);
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 100%;
+    height: 100px;
+  }
+  .AIMbox3 .detailBtn button{
+    width: 130px;
+    font-size: 13px;
+  }
+  .AIMbox4 {
+    flex: 1 1 calc(35% - 10px); /* Make each div take up 25% of the container */
+    /* background-color: #4CAF50; */
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 8px 3px black;
+    border-radius: 20px;
+  }
+.AIMbox4 .AVGrating i{
+   text-align: start;
+   color: yellow;
+}
+.AIMbox4 .AVGrating b{
+   font-size: 35px;
+}
+.AIMbox4 span{
+   font-size: 20px;
+   font-weight: bold;
+}
+.AIMbox4 center{
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(77, 75, 75);
+  }
+  /* For small screens, stack the divs vertically */
+  @media screen and (max-width: 480px) {
+    .AIMbox1 .AIMbox2 .AIMbox3 {
+      flex: 1 1 100%; 
+        }
+        .AIMbox1 img{
+            width: 350px;
+            height: 250px;
+          }
+
+          .AIMbox1{
+           height: 300px;
+          }
+          .AIMbox3{
+
+            margin-top: 40px;        
+            }
+  }
